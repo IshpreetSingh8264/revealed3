@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #ff77a9;
+    padding: 15px;
+    color: white;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.home {
+    background: #ffbfcc;
+    color: #5f5f5f;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    background: #e8e8e8;
+}
+
+.timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.love-notes {
+    background: #ffccf2;
+}
+
+.notes-container {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.secret-messages {
+    background: #f0f0f0;
+}
+
+button {
+    background-color: #ff77a9;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff549d;
+}
+
+#secretMessage {
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+footer {
+    background: #ff77a9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .timeline-container {
+        flex-direction: column;
+    }
+    .event {
+        width: 100%;
+    }
+}
