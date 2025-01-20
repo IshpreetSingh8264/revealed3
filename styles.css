@@ -8,6 +8,12 @@
 body {
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #ff77a9, #ffbfcc);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -41,15 +47,20 @@ ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #ffccf2;
 }
 
 section {
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 .home {
-    background: #ffbfcc;
+    background: linear-gradient(to right, #ffbfcc, #ff77a9);
     color: #5f5f5f;
 }
 
@@ -65,16 +76,20 @@ h1 {
 .timeline-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .event {
     background: #fff;
     padding: 20px;
     margin: 10px;
-    width: 250px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.event:hover {
+    transform: translateY(-10px);
 }
 
 .love-notes {
@@ -83,8 +98,11 @@ h1 {
 
 .notes-container {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.8;
     color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .secret-messages {
@@ -100,6 +118,7 @@ button {
     border-radius: 5px;
     font-size: 18px;
     margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
@@ -117,7 +136,8 @@ footer {
     background: #ff77a9;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
